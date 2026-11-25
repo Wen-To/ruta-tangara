@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyecto · Ruta Tángara</title>
+<meta name="description" content="Video y detalles de la creación del sitio Ruta Tángara, proyecto académico.">
+<meta name="theme-color" content="#1F5C4D">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-bino" viewBox="0 0 24 24"><circle cx="6.5" cy="15.5" r="3.5"/><circle cx="17.5" cy="15.5" r="3.5"/><path d="M10 15.5h4M4 13l2-8h3l1 5M20 13l-2-8h-3l-1 5M10 10h4"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.5c1.8.9 3 2.9 3 5.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12h5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></symbol>
+</svg>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Ruta Tángara, ir al inicio">
+      <img src="img/logo.svg" alt="" width="44" height="44"><span>Ruta Tángara</span>
+    </a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-principal"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg>Menú</button>
+    <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+      <ul><li><a href="index.html">Inicio</a></li><li><a href="salidas.html">Salidas</a></li><li><a href="guias.html">Guías</a></li><li><a href="glosario.html">Glosario</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="proyecto.html" aria-current="page">Proyecto</a></li><li class="solo-movil"><a href="inscripcion.html">Inscribirme</a></li></ul>
+    </nav>
+    <a class="btn primary small head-inscribirme" href="inscripcion.html"><svg class="ic" aria-hidden="true"><use href="#i-bino"/></svg>Inscribirme</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="block tight">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Ubicación"><ol><li><a href="index.html">Inicio</a></li><li aria-current="page">Proyecto</li></ol></nav>
+    <div class="grid2" style="margin-top:24px;align-items:start">
+      <div class="texto">
+        <span class="eyebrow">Actividad 4 · Herramientas para el desarrollo de la aplicación web</span>
+        <h1>Así construimos este sitio</h1>
+        <p style="margin-top:16px">Ruta Tángara es el sitio web de un cliente ficticio que organiza salidas de avistamiento de aves cerca de Bogotá. En la Actividad 2 diseñamos su <strong>wireframe</strong>; en esta actividad lo convertimos en un sitio funcional, con contenido real sobre las aves y los lugares, y lo publicamos en un servicio de hosting gratuito.</p>
+        <div class="tabla-wrap" style="margin-top:20px">
+          <table class="tabla">
+            <caption>Datos del proyecto</caption>
+            <tbody>
+              <tr><th scope="row">Autoras</th><td>Wendy Jelitza Torres Jimenez y Sofi Yanina Chilatra Tapiero</td></tr>
+              <tr><th scope="row">Asignatura</th><td>Electiva I – Diseño de aplicaciones web I</td></tr>
+              <tr><th scope="row">Docente</th><td>Diana Toquica</td></tr>
+              <tr><th scope="row">Institución</th><td>Facultad de Ingeniería, Corporación Universitaria Iberoamericana</td></tr>
+              <tr><th scope="row">Hosting</th><td>GitHub Pages (gratuito)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2 style="font-size:22px;margin-bottom:12px">Video: demostración de la creación del sitio</h2>
+        <div id="video-proyecto">
+          <div class="video-pendiente">
+            <svg class="ic" aria-hidden="true"><use href="#i-play"/></svg>
+            <p>El video de demostración se mostrará aquí en cuanto se publique en YouTube.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block band">
+  <div class="wrap">
+    <div class="head-row"><div><span class="eyebrow">Herramientas</span><h2>Con qué lo hicimos</h2></div></div>
+    <div class="tabla-wrap">
+      <table class="tabla">
+        <caption>Herramientas usadas y para qué sirvieron</caption>
+        <thead><tr><th scope="col">Herramienta</th><th scope="col">Uso en el proyecto</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">HTML5</th><td>Estructura de las nueve páginas, con etiquetas semánticas como <code>header</code>, <code>nav</code>, <code>main</code>, <code>section</code>, <code>table</code> y <code>footer</code>.</td></tr>
+          <tr><th scope="row">CSS3</th><td>Diseño visual y adaptable: variables de color, cuadrículas (<code>grid</code>), cajas flexibles (<code>flex</code>) y consultas de medios para el celular.</td></tr>
+          <tr><th scope="row">JavaScript</th><td>Filtro y orden de salidas, galería, pestañas, validación del formulario, cálculo del total, confirmación y botones para copiar.</td></tr>
+          <tr><th scope="row">Visual Studio Code</th><td>Editor de código para escribir y organizar los archivos.</td></tr>
+          <tr><th scope="row">SVG</th><td>Ilustraciones vectoriales propias de los paisajes, las aves y los guías.</td></tr>
+          <tr><th scope="row">Lora y Poppins</th><td>Fuentes de uso libre (licencia OFL), alojadas dentro del sitio para que carguen sin depender de otro servidor.</td></tr>
+          <tr><th scope="row">xeno-canto y OpenStreetMap</th><td>Reproductores de cantos de aves con licencia Creative Commons y mapa del punto de encuentro.</td></tr>
+          <tr><th scope="row">Git, GitHub y GitHub Pages</th><td>Control de versiones y publicación gratuita del sitio en internet.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap grid2" style="align-items:start">
+    <div class="texto">
+      <h2>Proceso de desarrollo</h2>
+      <ol class="pasos">
+        <li><div><strong>Partimos del wireframe.</strong> Conservamos la estructura de pantallas, la paleta y la tipografía definidas en la Actividad 2.</div></li>
+        <li><div><strong>Investigamos el contenido.</strong> Reemplazamos los marcadores grises por información verificada sobre los lugares y las aves.</div></li>
+        <li><div><strong>Escribimos el HTML</strong> de cada página con un encabezado y un pie comunes.</div></li>
+        <li><div><strong>Aplicamos los estilos</strong> en una sola hoja CSS, con variables para los colores.</div></li>
+        <li><div><strong>Programamos la interacción</strong> en JavaScript, a partir de un archivo de datos con las seis salidas.</div></li>
+        <li><div><strong>Probamos</strong> en computador y celular, y revisamos enlaces y ortografía.</div></li>
+        <li><div><strong>Publicamos</strong> el sitio en GitHub Pages.</div></li>
+      </ol>
+    </div>
+    <div class="texto">
+      <h2>Funciones del sitio</h2>
+      <ul class="check">
+        <li>Filtro por nivel y orden por fecha o valor en la página de salidas.</li>
+        <li>Ficha de cada salida generada desde los datos, con galería y pestañas.</li>
+        <li>Formulario de inscripción con validación y cálculo automático del total.</li>
+        <li>Página de confirmación con número de inscripción para copiar.</li>
+        <li>Cantos de aves, videos y mapa integrados en las páginas.</li>
+        <li>Glosario enlazado desde los términos técnicos.</li>
+        <li>Diseño adaptable a celular, con menú desplegable.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="block band">
+  <div class="wrap">
+    <div class="head-row"><div><span class="eyebrow">Resultado</span><h2>El sitio en computador y en celular</h2></div></div>
+    <div class="capturas">
+      <figure><img src="img/capturas/escritorio.png" alt="Captura de la página de inicio en un computador" width="1280" height="800" loading="lazy"><figcaption>Página de inicio en computador.</figcaption></figure>
+      <figure><img src="img/capturas/celular.png" alt="Captura de la página de una salida en un celular" width="390" height="844" loading="lazy"><figcaption>Ficha de una salida en celular.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="head-row"><div><span class="eyebrow">Créditos</span><h2>Grabaciones y fuentes</h2></div></div>
+    <div class="tabla-wrap">
+      <table class="tabla">
+        <caption>Grabaciones de xeno-canto usadas en el sitio</caption>
+        <thead><tr><th scope="col">Especie</th><th scope="col">Grabación</th><th scope="col">Autor</th><th scope="col">Licencia</th></tr></thead>
+        <tbody>
+          <tr><td>Copetón</td><td><a class="ext" href="https://www.xeno-canto.org/881658" target="_blank" rel="noopener">XC881658</a></td><td>MasBiomas</td><td>CC BY-NC-SA 4.0</td></tr>
+          <tr><td>Mirla patinaranja</td><td><a class="ext" href="https://www.xeno-canto.org/410080" target="_blank" rel="noopener">XC410080</a></td><td>Diego Gaona</td><td>CC BY-NC-SA 4.0</td></tr>
+          <tr><td>Colibrí chillón</td><td><a class="ext" href="https://www.xeno-canto.org/338150" target="_blank" rel="noopener">XC338150</a></td><td>David Ricardo Rodríguez Villamil</td><td>CC BY-NC-SA 4.0</td></tr>
+          <tr><td>Monjita (canto)</td><td><a class="ext" href="https://www.xeno-canto.org/303472" target="_blank" rel="noopener">XC303472</a></td><td>David Ricardo Rodríguez Villamil</td><td>CC BY-NC-SA 4.0</td></tr>
+          <tr><td>Monjita (llamado)</td><td><a class="ext" href="https://www.xeno-canto.org/513503" target="_blank" rel="noopener">XC513503</a></td><td>Fernando Castro</td><td>CC BY-NC-SA 4.0</td></tr>
+          <tr><td>Chamicero cundiboyacense</td><td><a class="ext" href="https://www.xeno-canto.org/577119" target="_blank" rel="noopener">XC577119</a></td><td>ClaraMarcela Rubiano Velasco</td><td>CC BY-NC-SA 4.0</td></tr>
+          <tr><td>Cucarachero de pantano</td><td><a class="ext" href="https://www.xeno-canto.org/20399" target="_blank" rel="noopener">XC20399</a></td><td>Oswaldo Cortes</td><td>CC BY-NC-ND 2.5</td></tr>
+          <tr><td>Tingua bogotana</td><td><a class="ext" href="https://www.xeno-canto.org/783188" target="_blank" rel="noopener">XC783188</a></td><td>Pedro Arturo Camargo Martínez</td><td>Ver ficha en xeno-canto</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 style="margin-top:32px">Fuentes de información</h3>
+    <ul class="puntos" style="max-width:900px">
+      <li>BirdLife International. (2024). <em>Species factsheet: Apolinar's Wren Cistothorus apolinari</em>. <a class="ext" href="https://datazone.birdlife.org/species/factsheet/apolinars-wren-cistothorus-apolinari" target="_blank" rel="noopener">Enlace</a></li>
+      <li>BirdLife International. (2025). <em>Species factsheet: Bogota Rail Rallus semiplumbeus</em>. <a class="ext" href="https://datazone.birdlife.org/species/factsheet/bogota-rail-rallus-semiplumbeus" target="_blank" rel="noopener">Enlace</a></li>
+      <li>Linares-Romero, L. G., Acevedo-Charry, O., Avellaneda, F., Cortés-Herrera, O., Cuervo, A. M., et al. (2020). Aves del Parque Nacional Natural Chingaza y zona de amortiguación, Cordillera Oriental de Colombia. <em>Biota Colombiana, 21</em>(1), 117-129. <a class="ext" href="https://doi.org/10.21068/c2020.v21n01a09" target="_blank" rel="noopener">https://doi.org/10.21068/c2020.v21n01a09</a></li>
+      <li>Wikipedia. Artículos <a class="ext" href="https://es.wikipedia.org/wiki/Humedales_de_Bogot%C3%A1" target="_blank" rel="noopener">Humedales de Bogotá</a>, <a class="ext" href="https://es.wikipedia.org/wiki/Humedal_La_Conejera" target="_blank" rel="noopener">Humedal La Conejera</a>, <a class="ext" href="https://es.wikipedia.org/wiki/Humedal_Tibabuyes" target="_blank" rel="noopener">Humedal Tibabuyes</a>, <a class="ext" href="https://es.wikipedia.org/wiki/Geograf%C3%ADa_de_Bogot%C3%A1" target="_blank" rel="noopener">Geografía de Bogotá</a>, <a class="ext" href="https://es.wikipedia.org/wiki/P%C3%A1ramo_andino" target="_blank" rel="noopener">Páramo andino</a> y <a class="ext" href="https://es.wikipedia.org/wiki/Bosque_nuboso" target="_blank" rel="noopener">Bosque nuboso</a>.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="44" height="44"><span>Ruta Tángara</span></a>
+        <p>Salidas guiadas de avistamiento de aves en Bogotá y sus alrededores, en grupos pequeños y para todos los niveles.</p>
+      </div>
+      <div>
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+          <li><a href="guias.html">Guías</a></li>
+          <li><a href="glosario.html">Glosario</a></li>
+          <li><a href="inscripcion.html">Inscripción</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <ul>
+          <li>WhatsApp: 300 123 4567</li>
+          <li>Correo: hola@rutatangara.co</li>
+          <li>Lunes a viernes, 8:00 a. m. a 6:00 p. m.</li>
+          <li><a href="contacto.html#preguntas">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Proyecto académico</h2>
+        <ul>
+          <li><a href="proyecto.html">Video y detalles del proyecto</a></li>
+          <li>Electiva I – Diseño de aplicaciones web I</li>
+          <li>Corporación Universitaria Iberoamericana</li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Ruta Tángara es un negocio ficticio creado con fines académicos: las fechas, los precios, los guías y los datos de contacto son ilustrativos. Los lugares, las aves, los datos de conservación y las grabaciones son reales y se citan con su fuente. © <span id="anio">2026</span> Wendy Jelitza Torres Jimenez y Sofi Yanina Chilatra Tapiero.</p>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

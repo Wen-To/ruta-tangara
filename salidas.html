@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salidas · Ruta Tángara</title>
+<meta name="description" content="Calendario de salidas de avistamiento de aves con filtro por nivel y orden por fecha o valor.">
+<meta name="theme-color" content="#1F5C4D">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-bino" viewBox="0 0 24 24"><circle cx="6.5" cy="15.5" r="3.5"/><circle cx="17.5" cy="15.5" r="3.5"/><path d="M10 15.5h4M4 13l2-8h3l1 5M20 13l-2-8h-3l-1 5M10 10h4"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.2a3.2 3.2 0 0 1 0 5.6M18 14.5c1.8.9 3 2.9 3 5.5"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 9h8M8 12h5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 15-14-1 10-6 15-14 15"/><path d="M5 19c3-5 6-8 10-10"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.2 7.8-8 9-4.8-1.2-8-4.5-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M10 8.5l5 3.5-5 3.5z"/></symbol>
+</svg>
+<a class="saltar" href="#contenido">Saltar al contenido</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Ruta Tángara, ir al inicio">
+      <img src="img/logo.svg" alt="" width="44" height="44"><span>Ruta Tángara</span>
+    </a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-principal"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg>Menú</button>
+    <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+      <ul><li><a href="index.html">Inicio</a></li><li><a href="salidas.html" aria-current="page">Salidas</a></li><li><a href="guias.html">Guías</a></li><li><a href="glosario.html">Glosario</a></li><li><a href="contacto.html">Contacto</a></li><li><a href="proyecto.html">Proyecto</a></li><li class="solo-movil"><a href="inscripcion.html">Inscribirme</a></li></ul>
+    </nav>
+    <a class="btn primary small head-inscribirme" href="inscripcion.html"><svg class="ic" aria-hidden="true"><use href="#i-bino"/></svg>Inscribirme</a>
+  </div>
+</header>
+
+<main id="contenido">
+
+<section class="block tight">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Ubicación"><ol><li><a href="index.html">Inicio</a></li><li aria-current="page">Salidas</li></ol></nav>
+    <h1 style="margin-top:12px">Salidas de avistamiento</h1>
+    <p class="lead" style="margin-top:8px">Seis salidas programadas entre diciembre y febrero, en humedales, bosques de niebla y páramos cercanos a Bogotá. Filtra por nivel u ordénalas como prefieras.</p>
+
+    <div class="toolbar">
+      <div class="chips" role="group" aria-label="Filtrar por nivel"><b>Nivel:</b>
+        <button type="button" class="chip" data-nivel="Todos" aria-pressed="true">Todos</button>
+        <button type="button" class="chip" data-nivel="Principiante" aria-pressed="false">Principiante</button>
+        <button type="button" class="chip" data-nivel="Intermedio" aria-pressed="false">Intermedio</button>
+        <button type="button" class="chip" data-nivel="Avanzado" aria-pressed="false">Avanzado</button>
+      </div>
+      <label class="orden">Ordenar por:
+        <select id="orden">
+          <option value="fecha">Fecha más cercana</option>
+          <option value="menor">Menor valor</option>
+          <option value="mayor">Mayor valor</option>
+        </select>
+      </label>
+    </div>
+    <p class="small muted" id="conteo" aria-live="polite"></p>
+    <div class="grid3" id="grilla-salidas" style="margin-top:12px"></div>
+  </div>
+</section>
+
+<section class="block band">
+  <div class="wrap">
+    <div class="head-row"><div><span class="eyebrow">Antes de elegir</span><h2>¿Qué nivel es para ti?</h2></div></div>
+    <div class="tabla-wrap">
+      <table class="tabla">
+        <caption>Comparación de los niveles de las salidas</caption>
+        <thead><tr><th scope="col">Nivel</th><th scope="col">Caminata</th><th scope="col">Horario típico</th><th scope="col">Ideal para</th></tr></thead>
+        <tbody>
+          <tr><th scope="row"><span class="tag Principiante">Principiante</span></th><td>Hasta 3 km, terreno plano o con pocas subidas.</td><td>Mañana, de 3 a 7 horas.</td><td>Primera salida y familias con niños desde los 8 años.</td></tr>
+          <tr><th scope="row"><span class="tag Intermedio">Intermedio</span></th><td>De 4 a 6 km, con subidas moderadas; en el páramo, a más de 3.000 m.</td><td>Medio día o día completo.</td><td>Personas con buena condición física o que ya hicieron una salida.</td></tr>
+          <tr><th scope="row"><span class="tag Avanzado">Avanzado</span></th><td>Hasta 8 km con pendientes y esperas largas en silencio.</td><td>Día completo, desde antes del amanecer.</td><td>Observadores con experiencia que buscan especies difíciles.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap grid2" style="align-items:start">
+    <div class="texto">
+      <h2>Elige tu salida en tres pasos</h2>
+      <ol class="pasos">
+        <li><div><strong>Revisa el nivel.</strong> Si es tu primera vez, empieza por una salida de nivel principiante.</div></li>
+        <li><div><strong>Compara horario y duración.</strong> El Humedal al amanecer termina antes de las 9:00 a. m.; el páramo ocupa todo el día.</div></li>
+        <li><div><strong>Abre la ficha.</strong> Allí encuentras el itinerario, qué llevar y el canto de una de las aves que buscaremos.</div></li>
+      </ol>
+      <h3>Lo que debes saber</h3>
+      <ul class="puntos">
+        <li>Los cupos se asignan en el orden de inscripción.</li>
+        <li>Si llueve fuerte, la salida se reprograma sin costo.</li>
+        <li>Las salidas con transporte parten del Parque de la 93.</li>
+      </ul>
+    </div>
+    <div class="card pad audio">
+      <span class="eyebrow">Escucha</span>
+      <h3>El canto que más vas a oír</h3>
+      <p class="muted">El copetón (<i class="cientifico">Zonotrichia capensis</i>) canta en parques, jardines y bordes de bosque. Su silbido es lo primero que aprenden a reconocer quienes empiezan.</p>
+      <iframe src="https://www.xeno-canto.org/881658/embed" scrolling="no" loading="lazy" title="Canto del copetón en xeno-canto"></iframe>
+      <p class="small muted">Grabación: MasBiomas, <a class="ext" href="https://www.xeno-canto.org/881658" target="_blank" rel="noopener">XC881658</a>. Licencia: CC BY-NC-SA 4.0.</p>
+      <img src="img/aves/copeton.svg" alt="Ilustración de un copetón con su copete y su collar rojizo" width="160" height="160" loading="lazy" style="width:120px">
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="img/logo.svg" alt="" width="44" height="44"><span>Ruta Tángara</span></a>
+        <p>Salidas guiadas de avistamiento de aves en Bogotá y sus alrededores, en grupos pequeños y para todos los niveles.</p>
+      </div>
+      <div>
+        <h2>Navegación</h2>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="salidas.html">Salidas</a></li>
+          <li><a href="guias.html">Guías</a></li>
+          <li><a href="glosario.html">Glosario</a></li>
+          <li><a href="inscripcion.html">Inscripción</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contacto</h2>
+        <ul>
+          <li>WhatsApp: 300 123 4567</li>
+          <li>Correo: hola@rutatangara.co</li>
+          <li>Lunes a viernes, 8:00 a. m. a 6:00 p. m.</li>
+          <li><a href="contacto.html#preguntas">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Proyecto académico</h2>
+        <ul>
+          <li><a href="proyecto.html">Video y detalles del proyecto</a></li>
+          <li>Electiva I – Diseño de aplicaciones web I</li>
+          <li>Corporación Universitaria Iberoamericana</li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Ruta Tángara es un negocio ficticio creado con fines académicos: las fechas, los precios, los guías y los datos de contacto son ilustrativos. Los lugares, las aves, los datos de conservación y las grabaciones son reales y se citan con su fuente. © <span id="anio">2026</span> Wendy Jelitza Torres Jimenez y Sofi Yanina Chilatra Tapiero.</p>
+  </div>
+</footer>
+
+<script src="js/datos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
