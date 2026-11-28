@@ -16,7 +16,7 @@
      "https://youtu.be/AbCdEfGhIjk"
      "https://www.youtube.com/watch?v=AbCdEfGhIjk"
    --------------------------------------------------------- */
-const VIDEO_PROYECTO = "";
+const VIDEO_PROYECTO = "https://youtu.be/oLa4eIzML3U";
 
 (function () {
   "use strict";
